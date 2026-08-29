@@ -6,7 +6,7 @@ The project display name is **SonicFabric**.
 
 This document defines behavior-level interface contracts between the shared SonicFabric components. It does not define C++ signatures, concrete classes, target APIs, memory layout, threading, tasks, interrupts, or deployment details.
 
-These contracts support the architecture principles in [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md), the requirements in [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md), the behavior/runtime views in [ArchitectureViews.md](ArchitectureViews.md), the structural views in [StructuralArchitectureViews.md](StructuralArchitectureViews.md), and the shared vocabulary in [Terminology.md](Terminology.md).
+These contracts support the architecture principles in [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md), the requirements in [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md), the behavior/runtime views in [ArchitectureViews.md](ArchitectureViews.md), the structural views in [StructuralArchitectureViews.md](StructuralArchitectureViews.md), and the shared vocabulary in [Terminology.md](../Terminology.md).
 
 ## Contract Ownership Rules
 

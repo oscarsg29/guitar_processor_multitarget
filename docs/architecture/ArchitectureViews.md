@@ -6,7 +6,7 @@ The project display name is **SonicFabric**.
 
 This document captures target-neutral product behavior and runtime architecture views for SonicFabric. The diagrams describe expected core behavior shared by bare metal, RTOS, and desktop versions. Target-specific details should be added later only after the shared product behavior is stable.
 
-These views support the architecture principles in [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md), the requirements in [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md), the structural views in [StructuralArchitectureViews.md](StructuralArchitectureViews.md), and the shared vocabulary in [Terminology.md](Terminology.md).
+These views support the architecture principles in [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md), the requirements in [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md), the structural views in [StructuralArchitectureViews.md](StructuralArchitectureViews.md), and the shared vocabulary in [Terminology.md](../Terminology.md).
 
 ## Product Concept View
 

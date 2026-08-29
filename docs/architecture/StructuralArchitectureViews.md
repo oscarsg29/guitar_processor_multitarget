@@ -6,7 +6,7 @@ The project display name is **SonicFabric**.
 
 This document captures target-neutral static structure for SonicFabric. These views describe the shared components, ownership boundaries, module dependencies, and platform port boundaries that should remain common before target-specific deployment decisions are made.
 
-These views support the architecture principles in [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md), the behavior/runtime views in [ArchitectureViews.md](ArchitectureViews.md), the requirements in [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md), and the shared vocabulary in [Terminology.md](Terminology.md).
+These views support the architecture principles in [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md), the behavior/runtime views in [ArchitectureViews.md](ArchitectureViews.md), the requirements in [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md), and the shared vocabulary in [Terminology.md](../Terminology.md).
 
 ## Shared Component View
 

@@ -8,12 +8,12 @@ This document captures architecture-driving quality attribute scenarios for Soni
 
 Related documents:
 
-- [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md): requirement statements and `SFAB-*` labels.
-- [UseCases.md](UseCases.md): user-facing workflows and `SFAB-UC-*` labels.
+- [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md): requirement statements and `SFAB-*` labels.
+- [UseCases.md](../requirements/UseCases.md): user-facing workflows and `SFAB-UC-*` labels.
 - [ArchitectureViews.md](ArchitectureViews.md): target-neutral behavior and runtime diagrams.
 - [StructuralArchitectureViews.md](StructuralArchitectureViews.md): target-neutral structural diagrams.
 - [InterfaceContract.md](InterfaceContract.md): behavior-level interface contracts.
-- [Terminology.md](Terminology.md): shared vocabulary.
+- [Terminology.md](../Terminology.md): shared vocabulary.
 
 ## Scenario Format
 

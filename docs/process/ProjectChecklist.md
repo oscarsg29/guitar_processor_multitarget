@@ -15,19 +15,19 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Current Next Step
 
-- [ ] Start Step 9 by deciding whether to use `ArchitectureDecisionRecords.md` or an `ArchitectureDecisions/` directory.
+- [ ] Start Step 9 by deciding whether to use `../architecture/ArchitectureDecisionRecords.md` or an `../architecture/ArchitectureDecisions/` directory.
 
 ## Cross-Cutting Documentation Rules
 
 - [x] Define the rule that canonical content should be summarized and linked, not duplicated across documents.
-- [x] Link [UseCases.md](UseCases.md) from [AGENTS.md](AGENTS.md).
-- [x] Define Mermaid UML diagram guidance in [AGENTS.md](AGENTS.md).
+- [x] Link [UseCases.md](../requirements/UseCases.md) from [AGENTS.md](../../AGENTS.md).
+- [x] Define Mermaid UML diagram guidance in [AGENTS.md](../../AGENTS.md).
 - [x] Define the rule to add missing diagrams when they clarify use cases, components, activities, states, sequences, interfaces, or ownership.
 - [x] Define the rule to reduce assumptions, ask clarifying questions more often, and explain architecture reasoning for learning.
 
 ## Use Cases
 
-- [x] Create [UseCases.md](UseCases.md).
+- [x] Create [UseCases.md](../requirements/UseCases.md).
 - [x] Define `SFAB-UC-*` use-case label convention.
 - [x] Define primary actors without target-specific detail.
 - [x] Add UML-style Mermaid use-case diagram.
@@ -39,14 +39,14 @@ This checklist tracks progress through the SonicFabric development procedure def
 ## Step 1: Maintain Project Scope
 
 - [x] Define the project display name as **SonicFabric**.
-- [x] Define current product scope in [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md).
+- [x] Define current product scope in [ArchitectureAndDesignPrinciples.md](../architecture/ArchitectureAndDesignPrinciples.md).
 - [x] Define current exclusions for cabinet modeling, amplifier modeling, and named effects.
 - [x] Keep tuner and metronome as open/deferred topics rather than current requirements.
-- [x] Define document ownership in [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md).
+- [x] Define document ownership in [ArchitectureAndDesignPrinciples.md](../architecture/ArchitectureAndDesignPrinciples.md).
 
 ## Step 2: Capture Or Refine Requirements
 
-- [x] Create [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md).
+- [x] Create [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md).
 - [x] Define stable `SFAB-*` requirement label convention.
 - [x] Define base product requirements.
 - [x] Define base hardware/runtime requirements.
@@ -55,7 +55,7 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Step 3: Identify Architectural Drivers
 
-- [x] Capture initial architectural drivers in [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md).
+- [x] Capture initial architectural drivers in [ArchitectureAndDesignPrinciples.md](../architecture/ArchitectureAndDesignPrinciples.md).
 - [x] Keep low-latency real-time audio visible as a driver.
 - [x] Keep reorderable generic effect chains visible as a driver.
 - [x] Keep shared product behavior across bare metal, RTOS, and desktop visible as a driver.
@@ -64,7 +64,7 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Step 4: Define Shared Terminology
 
-- [x] Create [Terminology.md](Terminology.md).
+- [x] Create [Terminology.md](../Terminology.md).
 - [x] Define product terms.
 - [x] Define architecture terms.
 - [x] Define target terms.
@@ -73,7 +73,7 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Step 5: Document Shared Behavior Views
 
-- [x] Create [ArchitectureViews.md](ArchitectureViews.md).
+- [x] Create [ArchitectureViews.md](../architecture/ArchitectureViews.md).
 - [x] Add Product Concept View.
 - [x] Add Runtime Audio and Control Flow.
 - [x] Add Processor State Model.
@@ -83,7 +83,7 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Step 6: Document Shared Structural Views
 
-- [x] Create [StructuralArchitectureViews.md](StructuralArchitectureViews.md).
+- [x] Create [StructuralArchitectureViews.md](../architecture/StructuralArchitectureViews.md).
 - [x] Add Shared Component View.
 - [x] Add Layer and Dependency View.
 - [x] Add Shared Module Dependency View.
@@ -96,7 +96,7 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Step 7: Define Interface Contracts
 
-- [x] Create [InterfaceContract.md](InterfaceContract.md).
+- [x] Create [InterfaceContract.md](../architecture/InterfaceContract.md).
 - [x] Define contract ownership rules.
 - [x] Add UML-style Mermaid Interface Ownership Overview.
 - [x] Add UML-style Mermaid Product Contract Relationships.
@@ -110,7 +110,7 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Step 8: Define Quality Attribute Scenarios
 
-- [x] Create [QualityAttributeScenarios.md](QualityAttributeScenarios.md).
+- [x] Create [QualityAttributeScenarios.md](../architecture/QualityAttributeScenarios.md).
 - [x] Define a quality attribute scenario template.
 - [x] Add latency scenario.
 - [x] Add preset recall scenario.
@@ -124,7 +124,7 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Step 9: Select Architectural Tactics And Decisions
 
-- [ ] Decide whether to use `ArchitectureDecisionRecords.md` or an `ArchitectureDecisions/` directory.
+- [ ] Decide whether to use `../architecture/ArchitectureDecisionRecords.md` or an `../architecture/ArchitectureDecisions/` directory.
 - [ ] Define an architecture decision record format.
 - [ ] Record decisions already made.
 - [ ] Capture tactics for performance.
@@ -155,18 +155,18 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Step 12: Refine Target-Specific Requirements
 
-- [ ] Create `TargetRequirements/DesktopRequirements.md` when desktop-specific requirements are needed.
-- [ ] Create `TargetRequirements/BareMetalRequirements.md` when bare-metal-specific requirements are needed.
-- [ ] Create `TargetRequirements/RTOSRequirements.md` when RTOS-specific requirements are needed.
+- [ ] Create `docs/targets/desktop/Requirements.md` when desktop-specific requirements are needed.
+- [ ] Create `docs/targets/bare-metal/Requirements.md` when bare-metal-specific requirements are needed.
+- [ ] Create `docs/targets/rtos/Requirements.md` when RTOS-specific requirements are needed.
 - [ ] Keep desktop requirements minimal unless product behavior requires more.
 - [ ] Capture bare metal and RTOS constraints only when they become architecturally significant.
 - [ ] Preserve common product behavior across targets.
 
 ## Step 13: Add Target Architecture Views
 
-- [ ] Create `TargetArchitectureViews/DesktopArchitectureView.md` when desktop architecture is ready.
-- [ ] Create `TargetArchitectureViews/BareMetalArchitectureView.md` when bare metal architecture is ready.
-- [ ] Create `TargetArchitectureViews/RTOSArchitectureView.md` when RTOS architecture is ready.
+- [ ] Create `docs/targets/desktop/ArchitectureView.md` when desktop architecture is ready.
+- [ ] Create `docs/targets/bare-metal/ArchitectureView.md` when bare metal architecture is ready.
+- [ ] Create `docs/targets/rtos/ArchitectureView.md` when RTOS architecture is ready.
 - [ ] Add deployment/allocation views only after target requirements exist.
 - [ ] Map shared core, platform ports, target adapters, target runtime, and hardware mechanisms.
 
@@ -180,5 +180,8 @@ This checklist tracks progress through the SonicFabric development procedure def
 ## Repository Hygiene
 
 - [x] Add PDF ignore rule to `.gitignore`.
+- [x] Move documentation files into the `docs/` folder structure.
+- [x] Document the `docs/` folder structure.
 - [ ] Decide whether `CodingStyles.md` should be tracked.
-- [x] Commit and push current documentation changes.
+- [x] Commit and push quality scenario documentation changes.
+- [x] Commit and push documentation folder structure changes.

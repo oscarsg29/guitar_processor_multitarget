@@ -24,9 +24,9 @@ Keep the base scope clear before expanding features.
 
 Inputs:
 
-- [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md)
-- [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md)
-- [Terminology.md](Terminology.md)
+- [ArchitectureAndDesignPrinciples.md](../architecture/ArchitectureAndDesignPrinciples.md)
+- [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md)
+- [Terminology.md](../Terminology.md)
 
 Actions:
 
@@ -46,8 +46,8 @@ Use requirements to describe product behavior and quality needs before selecting
 
 Inputs:
 
-- [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md)
-- [Terminology.md](Terminology.md)
+- [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md)
+- [Terminology.md](../Terminology.md)
 
 Actions:
 
@@ -55,7 +55,7 @@ Actions:
 - Assign stable `SFAB-*` labels.
 - Separate product requirements, base hardware/runtime requirements, and software quality requirements.
 - Keep target-specific requirements out of the common file unless they affect common behavior.
-- When target-specific detail becomes necessary, create the appropriate target file under `TargetRequirements/`.
+- When target-specific detail becomes necessary, create the appropriate target file under `docs/targets/`.
 
 Exit criteria:
 
@@ -67,8 +67,8 @@ Use architectural drivers to decide which requirements shape the architecture.
 
 Inputs:
 
-- [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md)
-- [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md)
+- [ArchitectureAndDesignPrinciples.md](../architecture/ArchitectureAndDesignPrinciples.md)
+- [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md)
 
 Actions:
 
@@ -86,7 +86,7 @@ Keep vocabulary stable before adding diagrams or contracts.
 
 Inputs:
 
-- [Terminology.md](Terminology.md)
+- [Terminology.md](../Terminology.md)
 
 Actions:
 
@@ -104,9 +104,9 @@ Describe expected runtime behavior before target-specific behavior.
 
 Inputs:
 
-- [ArchitectureViews.md](ArchitectureViews.md)
-- [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md)
-- [Terminology.md](Terminology.md)
+- [ArchitectureViews.md](../architecture/ArchitectureViews.md)
+- [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md)
+- [Terminology.md](../Terminology.md)
 
 Actions:
 
@@ -124,9 +124,9 @@ Capture user-facing workflows without duplicating requirements or architecture b
 
 Inputs:
 
-- [UseCases.md](UseCases.md)
-- [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md)
-- [Terminology.md](Terminology.md)
+- [UseCases.md](../requirements/UseCases.md)
+- [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md)
+- [Terminology.md](../Terminology.md)
 
 Actions:
 
@@ -145,9 +145,9 @@ Describe the static shared structure after the behavior is clear.
 
 Inputs:
 
-- [StructuralArchitectureViews.md](StructuralArchitectureViews.md)
-- [InterfaceContract.md](InterfaceContract.md)
-- [Terminology.md](Terminology.md)
+- [StructuralArchitectureViews.md](../architecture/StructuralArchitectureViews.md)
+- [InterfaceContract.md](../architecture/InterfaceContract.md)
+- [Terminology.md](../Terminology.md)
 
 Actions:
 
@@ -166,9 +166,9 @@ Define what components require and guarantee before defining code-level APIs.
 
 Inputs:
 
-- [InterfaceContract.md](InterfaceContract.md)
-- [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md)
-- [StructuralArchitectureViews.md](StructuralArchitectureViews.md)
+- [InterfaceContract.md](../architecture/InterfaceContract.md)
+- [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md)
+- [StructuralArchitectureViews.md](../architecture/StructuralArchitectureViews.md)
 
 Actions:
 
@@ -188,15 +188,15 @@ Turn quality attributes into concrete scenarios that can guide design and evalua
 
 Recommended next file:
 
-- `QualityAttributeScenarios.md`
+- `../architecture/QualityAttributeScenarios.md`
 
 Inputs:
 
-- [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md)
-- [UseCases.md](UseCases.md)
-- [ArchitectureViews.md](ArchitectureViews.md)
-- [StructuralArchitectureViews.md](StructuralArchitectureViews.md)
-- [InterfaceContract.md](InterfaceContract.md)
+- [ProductAndSoftwareRequirements.md](../requirements/ProductAndSoftwareRequirements.md)
+- [UseCases.md](../requirements/UseCases.md)
+- [ArchitectureViews.md](../architecture/ArchitectureViews.md)
+- [StructuralArchitectureViews.md](../architecture/StructuralArchitectureViews.md)
+- [InterfaceContract.md](../architecture/InterfaceContract.md)
 
 Actions:
 
@@ -214,7 +214,7 @@ Record decisions after requirements, views, contracts, and scenarios provide eno
 
 Recommended future file:
 
-- `ArchitectureDecisionRecords.md` or `ArchitectureDecisions/`
+- `../architecture/ArchitectureDecisionRecords.md` or `../architecture/ArchitectureDecisions/`
 
 Actions:
 
@@ -267,9 +267,9 @@ Only move into target-specific detail after shared behavior and contracts are st
 
 Recommended future files:
 
-- `TargetRequirements/DesktopRequirements.md`
-- `TargetRequirements/BareMetalRequirements.md`
-- `TargetRequirements/RTOSRequirements.md`
+- `docs/targets/desktop/Requirements.md`
+- `docs/targets/bare-metal/Requirements.md`
+- `docs/targets/rtos/Requirements.md`
 
 Actions:
 
@@ -287,9 +287,9 @@ Add deployment and allocation views only after target requirements exist.
 
 Recommended future files:
 
-- `TargetArchitectureViews/DesktopArchitectureView.md`
-- `TargetArchitectureViews/BareMetalArchitectureView.md`
-- `TargetArchitectureViews/RTOSArchitectureView.md`
+- `docs/targets/desktop/ArchitectureView.md`
+- `docs/targets/bare-metal/ArchitectureView.md`
+- `docs/targets/rtos/ArchitectureView.md`
 
 Actions:
 
