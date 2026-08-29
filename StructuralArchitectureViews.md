@@ -133,7 +133,7 @@ flowchart TD
 
 ## Platform Port Boundary View
 
-This view shows the shared core depending on target-neutral ports, with target adapters outside the shared core. Target mechanisms remain outside this static structure until target-specific architecture views are created.
+This view shows the shared core depending on target-neutral port contracts, with target adapters outside the shared core. Target mechanisms remain outside this static structure until target-specific architecture views are created.
 
 ```mermaid
 flowchart LR
@@ -143,13 +143,13 @@ flowchart LR
         DiagnosticsFacade[Diagnostics Facade]
     end
 
-    subgraph PlatformPorts[Platform Ports]
-        AudioIOPort[Audio I/O Port]
-        ControlPort[Control Port]
-        PersistencePort[Persistence Port]
-        TimePort[Time or Sample-Clock Port]
-        DiagnosticsPort[Diagnostics Port]
-        ResourcePort[Resource Capability Port]
+    subgraph PortContracts[Platform Port Contracts]
+        AudioIO[Audio I/O]
+        Control[Control]
+        Persistence[Persistence]
+        Time[Time / Sample Clock]
+        Diagnostics[Diagnostics]
+        Resources[Resource Capabilities]
     end
 
     subgraph TargetAdapters[Target Adapters]
@@ -158,35 +158,8 @@ flowchart LR
         RTOSAdapter[RTOS Adapter]
     end
 
-    ProductModel --> ControlPort
-    ProductModel --> PersistencePort
-    ProductModel --> DiagnosticsPort
-    DSPEngine --> AudioIOPort
-    DSPEngine --> TimePort
-    DSPEngine --> ResourcePort
-    DSPEngine --> DiagnosticsFacade
-    DiagnosticsFacade --> DiagnosticsPort
-
-    DesktopAdapter --> AudioIOPort
-    DesktopAdapter --> ControlPort
-    DesktopAdapter --> PersistencePort
-    DesktopAdapter --> TimePort
-    DesktopAdapter --> DiagnosticsPort
-    DesktopAdapter --> ResourcePort
-
-    BareMetalAdapter --> AudioIOPort
-    BareMetalAdapter --> ControlPort
-    BareMetalAdapter --> PersistencePort
-    BareMetalAdapter --> TimePort
-    BareMetalAdapter --> DiagnosticsPort
-    BareMetalAdapter --> ResourcePort
-
-    RTOSAdapter --> AudioIOPort
-    RTOSAdapter --> ControlPort
-    RTOSAdapter --> PersistencePort
-    RTOSAdapter --> TimePort
-    RTOSAdapter --> DiagnosticsPort
-    RTOSAdapter --> ResourcePort
+    SharedCore --> PortContracts
+    TargetAdapters --> PortContracts
 ```
 
 ## Deferred Target Deployment Views
