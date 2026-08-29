@@ -28,6 +28,76 @@ Related documents:
 - **Integrator**: Connects SonicFabric to a target environment through platform ports and adapters.
 - **Maintainer**: Evolves the shared product behavior, DSP model, tests, and target integrations.
 
+## Use Case Diagram
+
+Mermaid does not provide a native UML use-case diagram type, so this view uses a Mermaid flowchart with UML-style actor-to-use-case relationships.
+
+```mermaid
+flowchart LR
+    Player[Player]
+    PresetAuthor[Preset Author]
+    Integrator[Integrator]
+    Maintainer[Maintainer]
+
+    subgraph SonicFabric[SonicFabric]
+        UC001((SFAB-UC-001<br/>Process Live Guitar Audio))
+        UC002((SFAB-UC-002<br/>Change An Effect Parameter))
+        UC003((SFAB-UC-003<br/>Bypass An Effect Slot))
+        UC004((SFAB-UC-004<br/>Enable Or Disable An Effect Slot))
+        UC005((SFAB-UC-005<br/>Reorder The Effect Chain))
+        UC006((SFAB-UC-006<br/>Recall A Preset))
+        UC007((SFAB-UC-007<br/>Save A Preset))
+        UC008((SFAB-UC-008<br/>Observe Runtime State And Health))
+        UC009((SFAB-UC-009<br/>Handle Invalid Configuration))
+    end
+
+    Player --- UC001
+    Player --- UC002
+    Player --- UC003
+    Player --- UC004
+    Player --- UC006
+    Player --- UC008
+    Player --- UC009
+
+    PresetAuthor --- UC002
+    PresetAuthor --- UC003
+    PresetAuthor --- UC004
+    PresetAuthor --- UC005
+    PresetAuthor --- UC006
+    PresetAuthor --- UC007
+    PresetAuthor --- UC008
+    PresetAuthor --- UC009
+
+    Integrator --- UC008
+    Integrator --- UC009
+
+    Maintainer --- UC008
+    Maintainer --- UC009
+```
+
+## Deferred Use Case Diagram
+
+These candidates remain outside the current system scope until promoted into requirements.
+
+```mermaid
+flowchart LR
+    User[Future User]
+
+    subgraph Deferred[Deferred SonicFabric Use Cases]
+        Tuner((Use SonicFabric as a Tuner))
+        Metronome((Use SonicFabric as a Metronome))
+        Cabinet((Use Cabinet Modeling))
+        Amplifier((Use Amplifier Modeling))
+        NamedEffects((Use Specific Named Effect Types))
+    end
+
+    User -. deferred .- Tuner
+    User -. deferred .- Metronome
+    User -. deferred .- Cabinet
+    User -. deferred .- Amplifier
+    User -. deferred .- NamedEffects
+```
+
 ## Primary Use Cases
 
 ### SFAB-UC-001: Process Live Guitar Audio

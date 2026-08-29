@@ -28,6 +28,7 @@ This document defines shared terminology for SonicFabric architecture, requireme
 - **Chain Configuration**: The product data that describes effect order, effect state, and parameter values for the effect chain.
 - **Validated Chain Configuration**: A chain configuration that has passed product validation and is acceptable for use by the DSP engine.
 - **Use Case**: A user-facing workflow that describes an actor goal and links to related requirements without duplicating the requirement text.
+- **Quality Attribute Scenario**: A structured architecture scenario that describes a stimulus, environment, affected artifact, expected response, and response measure for a quality attribute.
 
 ## Architecture Terms
 

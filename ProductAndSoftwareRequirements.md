@@ -8,7 +8,7 @@ This document defines the base product and software requirements for SonicFabric
 
 Requirement labels are stable identifiers. They should be used when referencing requirements from architecture decisions, tests, design notes, or target-specific documents.
 
-Shared terminology is defined in [Terminology.md](Terminology.md). User-facing workflows are defined in [UseCases.md](UseCases.md). Behavior-level interface contracts are defined in [InterfaceContract.md](InterfaceContract.md).
+Shared terminology is defined in [Terminology.md](Terminology.md). User-facing workflows are defined in [UseCases.md](UseCases.md). Architecture-driving quality scenarios are defined in [QualityAttributeScenarios.md](QualityAttributeScenarios.md). Behavior-level interface contracts are defined in [InterfaceContract.md](InterfaceContract.md).
 
 ## Product Requirements
 

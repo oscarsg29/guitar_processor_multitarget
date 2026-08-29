@@ -11,6 +11,7 @@
 - [ArchitectureAndDesignPrinciples.md](ArchitectureAndDesignPrinciples.md): architecture direction, scope boundaries, design principles, architectural drivers, target strategy, and open topics.
 - [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md): product requirements, base hardware/runtime requirements, software quality requirements, and all stable `SFAB-*` requirement labels.
 - [UseCases.md](UseCases.md): user-facing workflows with `SFAB-UC-*` labels and links to related requirements.
+- [QualityAttributeScenarios.md](QualityAttributeScenarios.md): architecture-driving quality scenarios with `SFAB-QAS-*` labels.
 - [ArchitectureViews.md](ArchitectureViews.md): target-neutral Mermaid diagrams for product concepts, runtime flow, state behavior, preset recall, and effect-chain updates.
 - [StructuralArchitectureViews.md](StructuralArchitectureViews.md): target-neutral Mermaid diagrams for static shared components, layers, module dependencies, product model structure, DSP engine structure, and platform port boundaries.
 - [InterfaceContract.md](InterfaceContract.md): behavior-level interface contracts between shared components and platform ports.
@@ -32,6 +33,7 @@ Before changing architecture, requirements, or diagrams:
 - Avoid duplicating canonical content across documents; summarize and link to the owning document instead.
 - Add or update requirements only in [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md).
 - Add or update user-facing workflows only in [UseCases.md](UseCases.md).
+- Add or update quality attribute scenarios only in [QualityAttributeScenarios.md](QualityAttributeScenarios.md).
 - Add or update behavior/runtime diagrams in [ArchitectureViews.md](ArchitectureViews.md).
 - Add or update static structural diagrams in [StructuralArchitectureViews.md](StructuralArchitectureViews.md).
 - Add or update shared interface contracts in [InterfaceContract.md](InterfaceContract.md).
@@ -69,6 +71,7 @@ Use stable labels in [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequi
 - Base hardware/runtime requirements: `SFAB-HWR-*`
 - Software quality requirements: `SFAB-SQR-*`
 - Use cases: `SFAB-UC-*` in [UseCases.md](UseCases.md)
+- Quality attribute scenarios: `SFAB-QAS-*` in [QualityAttributeScenarios.md](QualityAttributeScenarios.md)
 
 When adding requirements:
 

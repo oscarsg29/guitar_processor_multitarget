@@ -15,7 +15,7 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Current Next Step
 
-- [ ] Create [QualityAttributeScenarios.md](QualityAttributeScenarios.md) with concrete architecture-driving quality attribute scenarios.
+- [ ] Start Step 9 by deciding whether to use `ArchitectureDecisionRecords.md` or an `ArchitectureDecisions/` directory.
 
 ## Cross-Cutting Documentation Rules
 
@@ -30,6 +30,8 @@ This checklist tracks progress through the SonicFabric development procedure def
 - [x] Create [UseCases.md](UseCases.md).
 - [x] Define `SFAB-UC-*` use-case label convention.
 - [x] Define primary actors without target-specific detail.
+- [x] Add UML-style Mermaid use-case diagram.
+- [x] Add UML-style Mermaid deferred use-case diagram.
 - [x] Define primary target-neutral use cases.
 - [x] Link use cases to related requirements instead of duplicating requirement text.
 - [x] Keep tuner, metronome, cabinet modeling, amplifier modeling, and named effect types deferred.
@@ -108,17 +110,17 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 ## Step 8: Define Quality Attribute Scenarios
 
-- [ ] Create `QualityAttributeScenarios.md`.
-- [ ] Define a quality attribute scenario template.
-- [ ] Add latency scenario.
-- [ ] Add preset recall scenario.
-- [ ] Add invalid configuration scenario.
-- [ ] Add effect-chain update scenario.
-- [ ] Add portability scenario.
-- [ ] Add testability scenario.
-- [ ] Add diagnostics scenario.
-- [ ] Add recovery/fallback scenario.
-- [ ] Prioritize scenarios that affect architecture decisions.
+- [x] Create [QualityAttributeScenarios.md](QualityAttributeScenarios.md).
+- [x] Define a quality attribute scenario template.
+- [x] Add latency scenario.
+- [x] Add preset recall scenario.
+- [x] Add invalid configuration scenario.
+- [x] Add effect-chain update scenario.
+- [x] Add portability scenario.
+- [x] Add testability scenario.
+- [x] Add diagnostics scenario.
+- [x] Add recovery/fallback scenario.
+- [x] Prioritize scenarios that affect architecture decisions.
 
 ## Step 9: Select Architectural Tactics And Decisions
 
@@ -179,4 +181,4 @@ This checklist tracks progress through the SonicFabric development procedure def
 
 - [x] Add PDF ignore rule to `.gitignore`.
 - [ ] Decide whether `CodingStyles.md` should be tracked.
-- [ ] Commit and push current documentation changes.
+- [x] Commit and push current documentation changes.

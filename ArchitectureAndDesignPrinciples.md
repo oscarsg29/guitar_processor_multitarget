@@ -8,13 +8,14 @@ This document defines the base architecture direction for SonicFabric, a multi-t
 
 The architecture guidance follows the framing from *Software Architecture in Practice*: architecture is driven by the system structures that matter, the externally visible behavior of elements, the relations between those elements, and the quality attributes that the product must achieve. This document therefore focuses on architecturally significant requirements, not implementation details for any one target.
 
-The product and software requirements are maintained in [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md). User-facing workflows are maintained in [UseCases.md](UseCases.md). Target-neutral behavior and runtime diagrams are maintained in [ArchitectureViews.md](ArchitectureViews.md). Target-neutral structural diagrams are maintained in [StructuralArchitectureViews.md](StructuralArchitectureViews.md). Shared interface contracts are maintained in [InterfaceContract.md](InterfaceContract.md). Shared terminology is defined in [Terminology.md](Terminology.md).
+The product and software requirements are maintained in [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md). User-facing workflows are maintained in [UseCases.md](UseCases.md). Architecture-driving quality scenarios are maintained in [QualityAttributeScenarios.md](QualityAttributeScenarios.md). Target-neutral behavior and runtime diagrams are maintained in [ArchitectureViews.md](ArchitectureViews.md). Target-neutral structural diagrams are maintained in [StructuralArchitectureViews.md](StructuralArchitectureViews.md). Shared interface contracts are maintained in [InterfaceContract.md](InterfaceContract.md). Shared terminology is defined in [Terminology.md](Terminology.md).
 
 ## Document Ownership
 
 - This file owns architecture direction, scope boundaries, design principles, architectural drivers, and open topics.
 - `ProductAndSoftwareRequirements.md` owns requirement statements and `SFAB-*` requirement labels.
 - `UseCases.md` owns user-facing workflows and `SFAB-UC-*` use-case labels.
+- `QualityAttributeScenarios.md` owns architecture-driving quality scenarios and `SFAB-QAS-*` labels.
 - `ArchitectureViews.md` owns behavior and runtime Mermaid architecture diagrams.
 - `StructuralArchitectureViews.md` owns static shared component, module dependency, and port boundary Mermaid architecture diagrams.
 - `InterfaceContract.md` owns behavior-level interface contracts between shared components and platform ports.

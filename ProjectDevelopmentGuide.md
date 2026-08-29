@@ -190,6 +190,14 @@ Recommended next file:
 
 - `QualityAttributeScenarios.md`
 
+Inputs:
+
+- [ProductAndSoftwareRequirements.md](ProductAndSoftwareRequirements.md)
+- [UseCases.md](UseCases.md)
+- [ArchitectureViews.md](ArchitectureViews.md)
+- [StructuralArchitectureViews.md](StructuralArchitectureViews.md)
+- [InterfaceContract.md](InterfaceContract.md)
+
 Actions:
 
 - Define scenarios for latency, preset recall, invalid configuration, chain update, portability, testability, diagnostics, and recovery.
