@@ -58,6 +58,9 @@ compile_commands.json
 *.bak
 *.swp
 
+# Reference documents
+*.pdf
+
 # vcpkg
 vcpkg_installed/
 
