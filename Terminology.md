@@ -27,6 +27,7 @@ This document defines shared terminology for SonicFabric architecture, requireme
 - **Stored Preset**: A preset available from a persistence mechanism but not necessarily active.
 - **Chain Configuration**: The product data that describes effect order, effect state, and parameter values for the effect chain.
 - **Validated Chain Configuration**: A chain configuration that has passed product validation and is acceptable for use by the DSP engine.
+- **Use Case**: A user-facing workflow that describes an actor goal and links to related requirements without duplicating the requirement text.
 
 ## Architecture Terms
 
@@ -39,6 +40,9 @@ This document defines shared terminology for SonicFabric architecture, requireme
 - **DSP Engine**: The target-neutral audio-processing core responsible for audio buffers, effect-chain execution, effect lifecycle, bypass behavior, and parameter application.
 - **Audio Buffer Model**: The shared representation of audio sample blocks or streams used by the DSP engine.
 - **Effect Chain Executor**: The DSP responsibility for applying the validated effect chain to audio.
+- **Effect Lifecycle**: The shared states and transitions an effect follows before, during, and after processing.
+- **Bypass Policy**: The shared rule for how audio behaves when an effect slot is bypassed.
+- **Processing Health**: DSP-related runtime health information, such as processing status, rejected updates, overload indicators, or fault/fallback signals.
 - **Diagnostics Facade**: The shared interface used by product and DSP logic to report diagnostics without depending on a target-specific diagnostics mechanism.
 - **Platform Port**: A target-neutral interface required by shared product or DSP code.
 - **Resource Capability Port**: The platform port that reports resource availability or capability information when needed by shared behavior.
@@ -63,6 +67,7 @@ This document defines shared terminology for SonicFabric architecture, requireme
 - **RTOS Target**: A SonicFabric target running on a real-time operating system.
 - **Target-Specific Requirement**: A requirement that applies to one target and should be documented separately from the common product requirements unless it changes common product behavior.
 - **Target Allocation View**: An architecture view showing how shared SonicFabric elements map to one target's adapters, runtime, and hardware mechanisms.
+- **Interface Contract**: A behavior-level agreement between components or between shared code and platform ports. It describes ownership, consumers, required behavior, invariants, and failure behavior without defining implementation signatures.
 
 ## Excluded Terms For Current Scope
 

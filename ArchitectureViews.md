@@ -37,25 +37,6 @@ flowchart TD
     RuntimeState --> ChainState[Chain Configuration]
 ```
 
-## Layer and Dependency View
-
-This view describes the intended dependency direction. Shared product and DSP behavior should depend on stable platform ports, not on target mechanisms.
-
-```mermaid
-flowchart TD
-    ProductModel[Product Model<br/>presets, chains, parameters, common behavior]
-    DSPEngine[DSP Engine<br/>audio buffers, effect chain, effect lifecycle]
-    PlatformPorts[Platform Ports<br/>audio, control, persistence, time, diagnostics]
-    TargetAdapters[Target Adapters<br/>bare metal, RTOS, desktop]
-    TargetMechanisms[Target Mechanisms<br/>drivers, OS APIs, filesystems, UI frameworks]
-
-    ProductModel --> DSPEngine
-    ProductModel --> PlatformPorts
-    DSPEngine --> PlatformPorts
-    TargetAdapters --> PlatformPorts
-    TargetAdapters --> TargetMechanisms
-```
-
 ## Runtime Audio and Control Flow
 
 This view separates the real-time audio flow from the control/configuration flow. Control changes affect product state and chain configuration, but the audio path remains explicit and bounded.

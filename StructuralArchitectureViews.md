@@ -42,6 +42,25 @@ flowchart TD
     PlatformPorts --> ResourcePort[Resource Capability Port]
 ```
 
+## Layer and Dependency View
+
+This view describes the intended dependency direction. Shared product and DSP behavior should depend on stable platform ports, not on target mechanisms.
+
+```mermaid
+flowchart TD
+    ProductModel[Product Model<br/>presets, chains, parameters, common behavior]
+    DSPEngine[DSP Engine<br/>audio buffers, effect chain, effect lifecycle]
+    PlatformPorts[Platform Ports<br/>audio, control, persistence, time, diagnostics]
+    TargetAdapters[Target Adapters<br/>bare metal, RTOS, desktop]
+    TargetMechanisms[Target Mechanisms<br/>drivers, OS APIs, filesystems, UI frameworks]
+
+    ProductModel --> DSPEngine
+    ProductModel --> PlatformPorts
+    DSPEngine --> PlatformPorts
+    TargetAdapters --> PlatformPorts
+    TargetAdapters --> TargetMechanisms
+```
+
 ## Shared Module Dependency View
 
 This view shows intended dependency direction between shared modules. Dependencies should point toward stable contracts and avoid direct target mechanisms.
